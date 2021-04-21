@@ -48,7 +48,7 @@
                                 class="btn btn-danger btn-sm">
                             Delete
                         </button>
-                        <a asp-route-id="@item.Id" asp-page="Edit" class="btn btn-success btn-sm">Edit</a>
+                        <a asp-route-id="@item.Id" asp-page="Edit" class="btn btn-success btn-sm">Edit</a> @* we are using asp-rout-id to pass the parameter to the edit page *@
                     </td>
                 </tr>
             }
