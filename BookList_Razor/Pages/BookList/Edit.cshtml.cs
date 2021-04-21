@@ -20,7 +20,7 @@ namespace BookList_Razor.Pages.BookList
         }
         [BindProperty] //Model binder works as a middleman to map the incoming HTTP request with Controller action method.
         public Book Book { get; set; }
-        public async Task OnGet( int id)
+        public async Task OnGet( int id) //we got this id from the index.cs page asp-route-id
         {
             Book = await _db.Book.FindAsync(id);
         }
