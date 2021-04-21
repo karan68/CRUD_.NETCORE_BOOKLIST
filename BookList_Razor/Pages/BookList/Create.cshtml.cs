@@ -24,7 +24,7 @@ namespace BookList_Razor.Pages.BookList
         public void OnGet()
         {
         }
-        public async Task<IActionResult> OnPost()
+        public async Task<IActionResult> OnPost() //we use iactionresult as it will be used to redirect to a new page
         {
             if (!ModelState.IsValid)
             {
