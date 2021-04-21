@@ -18,7 +18,8 @@ namespace BookList_Razor.Pages.BookList
                       // In readonly fields, we can assign values in declaration and in the contructor part.
                       //if we had not used injection we would have to create an object of the applicationDb and dispose it and then do eg.vidly .net framework
         }
-        [BindProperty]
+        [BindProperty] //we used the bind property as we can fetch the book model in the onpost action , if we didn't do it we would have to declare a new 
+                       //book object inside the action like OnPost(Book bookObj)
         public Book Book { get; set; }
 
         public void OnGet()
